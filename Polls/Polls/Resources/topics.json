@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Cats",
+        "category": "Animals",
+        "id": 1001,
+        "emoji": "🐱",
+        "isFavorite": true,
+        "isLiked" : false,
+        "isDisliked" : false
+    },
+    {
+        "name": "Birds",
+        "category": "Animals",
+        "id": 1002,
+        "emoji": "🐦",
+        "isFavorite": false,
+        "isLiked" : false,
+        "isDisliked" : false
+    },
+    {
+        "name": "Dogs",
+        "category": "Animals",
+        "id": 1003,
+        "emoji": "🐶",
+        "isFavorite": false,
+        "isLiked" : false,
+        "isDisliked" : false
+    },
+    {
+        "name": "Mice",
+        "category": "Animals",
+        "id": 1004,
+        "emoji": "🐭",
+        "isFavorite": true,
+        "isLiked" : false,
+        "isDisliked" : false
+    },
+    {
+        "name": "Unicorn",
+        "category": "Animals",
+        "id": 1005,
+        "emoji": "🦄",
+        "isFavorite": true,
+        "isLiked" : false,
+        "isDisliked" : false
+    },
+    {
+        "name": "Fish",
+        "category": "Animals",
+        "id": 1006,
+        "emoji": "🐠",
+        "isFavorite": false,
+        "isLiked" : false,
+        "isDisliked" : false
+    }
+]

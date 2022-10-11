@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3407FC7728F4E771006B26D6 /* PollsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FC7628F4E771006B26D6 /* PollsApp.swift */; };
+		3407FC7928F4E771006B26D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FC7828F4E771006B26D6 /* ContentView.swift */; };
+		3407FC7B28F4E773006B26D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3407FC7A28F4E773006B26D6 /* Assets.xcassets */; };
+		3407FC7E28F4E773006B26D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3407FC7D28F4E773006B26D6 /* Preview Assets.xcassets */; };
+		3407FC8828F4E774006B26D6 /* PollsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FC8728F4E774006B26D6 /* PollsTests.swift */; };
+		3407FC9228F4E774006B26D6 /* PollsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FC9128F4E774006B26D6 /* PollsUITests.swift */; };
+		3407FC9428F4E774006B26D6 /* PollsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FC9328F4E774006B26D6 /* PollsUITestsLaunchTests.swift */; };
+		3407FCA128F4E9D7006B26D6 /* topics.json in Resources */ = {isa = PBXBuildFile; fileRef = 3407FCA028F4E9D7006B26D6 /* topics.json */; };
+		3407FCA528F4EA7F006B26D6 /* TopicsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCA428F4EA7F006B26D6 /* TopicsRow.swift */; };
+		3407FCA728F4EAA7006B26D6 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCA628F4EAA6006B26D6 /* Topics.swift */; };
+		3407FCA928F4EAC8006B26D6 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCA828F4EAC8006B26D6 /* ModelData.swift */; };
+		3407FCAB28F4EBFB006B26D6 /* TopicsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCAA28F4EBFB006B26D6 /* TopicsList.swift */; };
+		3407FCAD28F4ECBB006B26D6 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCAC28F4ECBB006B26D6 /* TopicDetail.swift */; };
+		3407FCB228F4F26E006B26D6 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCB128F4F26E006B26D6 /* LikeButton.swift */; };
+		3407FCB828F4F929006B26D6 /* LikeDislikeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCB728F4F929006B26D6 /* LikeDislikeButtons.swift */; };
+		3407FCBA28F4FB23006B26D6 /* DislikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCB928F4FB23006B26D6 /* DislikeButton.swift */; };
+		3407FCBC28F4FE11006B26D6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCBB28F4FE11006B26D6 /* Feed.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3407FC8428F4E774006B26D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3407FC6B28F4E771006B26D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3407FC7228F4E771006B26D6;
+			remoteInfo = Polls;
+		};
+		3407FC8E28F4E774006B26D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3407FC6B28F4E771006B26D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3407FC7228F4E771006B26D6;
+			remoteInfo = Polls;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3407FC7328F4E771006B26D6 /* Polls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Polls.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3407FC7628F4E771006B26D6 /* PollsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsApp.swift; sourceTree = "<group>"; };
+		3407FC7828F4E771006B26D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3407FC7A28F4E773006B26D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3407FC7D28F4E773006B26D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3407FC8328F4E774006B26D6 /* PollsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3407FC8728F4E774006B26D6 /* PollsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsTests.swift; sourceTree = "<group>"; };
+		3407FC8D28F4E774006B26D6 /* PollsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PollsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3407FC9128F4E774006B26D6 /* PollsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsUITests.swift; sourceTree = "<group>"; };
+		3407FC9328F4E774006B26D6 /* PollsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3407FCA028F4E9D7006B26D6 /* topics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topics.json; sourceTree = "<group>"; };
+		3407FCA428F4EA7F006B26D6 /* TopicsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsRow.swift; sourceTree = "<group>"; };
+		3407FCA628F4EAA6006B26D6 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
+		3407FCA828F4EAC8006B26D6 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		3407FCAA28F4EBFB006B26D6 /* TopicsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsList.swift; sourceTree = "<group>"; };
+		3407FCAC28F4ECBB006B26D6 /* TopicDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetail.swift; sourceTree = "<group>"; };
+		3407FCB128F4F26E006B26D6 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		3407FCB728F4F929006B26D6 /* LikeDislikeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeDislikeButtons.swift; sourceTree = "<group>"; };
+		3407FCB928F4FB23006B26D6 /* DislikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DislikeButton.swift; sourceTree = "<group>"; };
+		3407FCBB28F4FE11006B26D6 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3407FC7028F4E771006B26D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3407FC8028F4E774006B26D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3407FC8A28F4E774006B26D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3407FC6A28F4E771006B26D6 = {
+			isa = PBXGroup;
+			children = (
+				3407FC7528F4E771006B26D6 /* Polls */,
+				3407FC8628F4E774006B26D6 /* PollsTests */,
+				3407FC9028F4E774006B26D6 /* PollsUITests */,
+				3407FC7428F4E771006B26D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3407FC7428F4E771006B26D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3407FC7328F4E771006B26D6 /* Polls.app */,
+				3407FC8328F4E774006B26D6 /* PollsTests.xctest */,
+				3407FC8D28F4E774006B26D6 /* PollsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3407FC7528F4E771006B26D6 /* Polls */ = {
+			isa = PBXGroup;
+			children = (
+				3407FC7628F4E771006B26D6 /* PollsApp.swift */,
+				3407FCB028F4EF0B006B26D6 /* Resources */,
+				3407FCAF28F4EF01006B26D6 /* Models */,
+				3407FCAE28F4EEE6006B26D6 /* Views */,
+				3407FC7A28F4E773006B26D6 /* Assets.xcassets */,
+				3407FC7C28F4E773006B26D6 /* Preview Content */,
+			);
+			path = Polls;
+			sourceTree = "<group>";
+		};
+		3407FC7C28F4E773006B26D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3407FC7D28F4E773006B26D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3407FC8628F4E774006B26D6 /* PollsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3407FC8728F4E774006B26D6 /* PollsTests.swift */,
+			);
+			path = PollsTests;
+			sourceTree = "<group>";
+		};
+		3407FC9028F4E774006B26D6 /* PollsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3407FC9128F4E774006B26D6 /* PollsUITests.swift */,
+				3407FC9328F4E774006B26D6 /* PollsUITestsLaunchTests.swift */,
+			);
+			path = PollsUITests;
+			sourceTree = "<group>";
+		};
+		3407FCAE28F4EEE6006B26D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3407FCB328F4F317006B26D6 /* Helper */,
+				3407FCB428F4F31D006B26D6 /* Topics */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3407FCAF28F4EF01006B26D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3407FCA628F4EAA6006B26D6 /* Topics.swift */,
+				3407FCA828F4EAC8006B26D6 /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3407FCB028F4EF0B006B26D6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3407FCA028F4E9D7006B26D6 /* topics.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3407FCB328F4F317006B26D6 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				3407FCB128F4F26E006B26D6 /* LikeButton.swift */,
+				3407FCB728F4F929006B26D6 /* LikeDislikeButtons.swift */,
+				3407FCB928F4FB23006B26D6 /* DislikeButton.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		3407FCB428F4F31D006B26D6 /* Topics */ = {
+			isa = PBXGroup;
+			children = (
+				3407FCAC28F4ECBB006B26D6 /* TopicDetail.swift */,
+				3407FCA428F4EA7F006B26D6 /* TopicsRow.swift */,
+				3407FC7828F4E771006B26D6 /* ContentView.swift */,
+				3407FCAA28F4EBFB006B26D6 /* TopicsList.swift */,
+				3407FCBB28F4FE11006B26D6 /* Feed.swift */,
+			);
+			path = Topics;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3407FC7228F4E771006B26D6 /* Polls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3407FC9728F4E774006B26D6 /* Build configuration list for PBXNativeTarget "Polls" */;
+			buildPhases = (
+				3407FC6F28F4E771006B26D6 /* Sources */,
+				3407FC7028F4E771006B26D6 /* Frameworks */,
+				3407FC7128F4E771006B26D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Polls;
+			productName = Polls;
+			productReference = 3407FC7328F4E771006B26D6 /* Polls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3407FC8228F4E774006B26D6 /* PollsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3407FC9A28F4E774006B26D6 /* Build configuration list for PBXNativeTarget "PollsTests" */;
+			buildPhases = (
+				3407FC7F28F4E774006B26D6 /* Sources */,
+				3407FC8028F4E774006B26D6 /* Frameworks */,
+				3407FC8128F4E774006B26D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3407FC8528F4E774006B26D6 /* PBXTargetDependency */,
+			);
+			name = PollsTests;
+			productName = PollsTests;
+			productReference = 3407FC8328F4E774006B26D6 /* PollsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3407FC8C28F4E774006B26D6 /* PollsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3407FC9D28F4E774006B26D6 /* Build configuration list for PBXNativeTarget "PollsUITests" */;
+			buildPhases = (
+				3407FC8928F4E774006B26D6 /* Sources */,
+				3407FC8A28F4E774006B26D6 /* Frameworks */,
+				3407FC8B28F4E774006B26D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3407FC8F28F4E774006B26D6 /* PBXTargetDependency */,
+			);
+			name = PollsUITests;
+			productName = PollsUITests;
+			productReference = 3407FC8D28F4E774006B26D6 /* PollsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3407FC6B28F4E771006B26D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					3407FC7228F4E771006B26D6 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					3407FC8228F4E774006B26D6 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 3407FC7228F4E771006B26D6;
+					};
+					3407FC8C28F4E774006B26D6 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 3407FC7228F4E771006B26D6;
+					};
+				};
+			};
+			buildConfigurationList = 3407FC6E28F4E771006B26D6 /* Build configuration list for PBXProject "Polls" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3407FC6A28F4E771006B26D6;
+			productRefGroup = 3407FC7428F4E771006B26D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3407FC7228F4E771006B26D6 /* Polls */,
+				3407FC8228F4E774006B26D6 /* PollsTests */,
+				3407FC8C28F4E774006B26D6 /* PollsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3407FC7128F4E771006B26D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3407FC7E28F4E773006B26D6 /* Preview Assets.xcassets in Resources */,
+				3407FCA128F4E9D7006B26D6 /* topics.json in Resources */,
+				3407FC7B28F4E773006B26D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3407FC8128F4E774006B26D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3407FC8B28F4E774006B26D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3407FC6F28F4E771006B26D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3407FCA528F4EA7F006B26D6 /* TopicsRow.swift in Sources */,
+				3407FCBA28F4FB23006B26D6 /* DislikeButton.swift in Sources */,
+				3407FCB828F4F929006B26D6 /* LikeDislikeButtons.swift in Sources */,
+				3407FCA728F4EAA7006B26D6 /* Topics.swift in Sources */,
+				3407FCBC28F4FE11006B26D6 /* Feed.swift in Sources */,
+				3407FCAD28F4ECBB006B26D6 /* TopicDetail.swift in Sources */,
+				3407FCA928F4EAC8006B26D6 /* ModelData.swift in Sources */,
+				3407FCB228F4F26E006B26D6 /* LikeButton.swift in Sources */,
+				3407FC7928F4E771006B26D6 /* ContentView.swift in Sources */,
+				3407FC7728F4E771006B26D6 /* PollsApp.swift in Sources */,
+				3407FCAB28F4EBFB006B26D6 /* TopicsList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3407FC7F28F4E774006B26D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3407FC8828F4E774006B26D6 /* PollsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3407FC8928F4E774006B26D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3407FC9228F4E774006B26D6 /* PollsUITests.swift in Sources */,
+				3407FC9428F4E774006B26D6 /* PollsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3407FC8528F4E774006B26D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3407FC7228F4E771006B26D6 /* Polls */;
+			targetProxy = 3407FC8428F4E774006B26D6 /* PBXContainerItemProxy */;
+		};
+		3407FC8F28F4E774006B26D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3407FC7228F4E771006B26D6 /* Polls */;
+			targetProxy = 3407FC8E28F4E774006B26D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3407FC9528F4E774006B26D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3407FC9628F4E774006B26D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3407FC9828F4E774006B26D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Polls/Preview Content\"";
+				DEVELOPMENT_TEAM = 25643XMV4B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.app.dev.nayo4039.Polls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3407FC9928F4E774006B26D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Polls/Preview Content\"";
+				DEVELOPMENT_TEAM = 25643XMV4B;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.app.dev.nayo4039.Polls;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3407FC9B28F4E774006B26D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25643XMV4B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.app.dev.nayo4039.PollsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polls.app/Polls";
+			};
+			name = Debug;
+		};
+		3407FC9C28F4E774006B26D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25643XMV4B;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.app.dev.nayo4039.PollsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Polls.app/Polls";
+			};
+			name = Release;
+		};
+		3407FC9E28F4E774006B26D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25643XMV4B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.app.dev.nayo4039.PollsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Polls;
+			};
+			name = Debug;
+		};
+		3407FC9F28F4E774006B26D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25643XMV4B;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mobile.app.dev.nayo4039.PollsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Polls;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3407FC6E28F4E771006B26D6 /* Build configuration list for PBXProject "Polls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3407FC9528F4E774006B26D6 /* Debug */,
+				3407FC9628F4E774006B26D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3407FC9728F4E774006B26D6 /* Build configuration list for PBXNativeTarget "Polls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3407FC9828F4E774006B26D6 /* Debug */,
+				3407FC9928F4E774006B26D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3407FC9A28F4E774006B26D6 /* Build configuration list for PBXNativeTarget "PollsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3407FC9B28F4E774006B26D6 /* Debug */,
+				3407FC9C28F4E774006B26D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3407FC9D28F4E774006B26D6 /* Build configuration list for PBXNativeTarget "PollsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3407FC9E28F4E774006B26D6 /* Debug */,
+				3407FC9F28F4E774006B26D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3407FC6B28F4E771006B26D6 /* Project object */;
+}
