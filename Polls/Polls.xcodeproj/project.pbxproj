@@ -24,6 +24,8 @@
 		3407FCB828F4F929006B26D6 /* LikeDislikeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCB728F4F929006B26D6 /* LikeDislikeButtons.swift */; };
 		3407FCBA28F4FB23006B26D6 /* DislikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCB928F4FB23006B26D6 /* DislikeButton.swift */; };
 		3407FCBC28F4FE11006B26D6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCBB28F4FE11006B26D6 /* Feed.swift */; };
+		34D9DF2B28F75F80001891BD /* EndScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9DF2A28F75F80001891BD /* EndScreen.swift */; };
+		34D9DF2D28F761FE001891BD /* endScreenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9DF2C28F761FE001891BD /* endScreenRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		3407FCB728F4F929006B26D6 /* LikeDislikeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeDislikeButtons.swift; sourceTree = "<group>"; };
 		3407FCB928F4FB23006B26D6 /* DislikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DislikeButton.swift; sourceTree = "<group>"; };
 		3407FCBB28F4FE11006B26D6 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		34D9DF2A28F75F80001891BD /* EndScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreen.swift; sourceTree = "<group>"; };
+		34D9DF2C28F761FE001891BD /* endScreenRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endScreenRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,8 @@
 				3407FC7828F4E771006B26D6 /* ContentView.swift */,
 				3407FCAA28F4EBFB006B26D6 /* TopicsList.swift */,
 				3407FCBB28F4FE11006B26D6 /* Feed.swift */,
+				34D9DF2A28F75F80001891BD /* EndScreen.swift */,
+				34D9DF2C28F761FE001891BD /* endScreenRow.swift */,
 			);
 			path = Topics;
 			sourceTree = "<group>";
@@ -329,6 +335,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3407FCA528F4EA7F006B26D6 /* TopicsRow.swift in Sources */,
+				34D9DF2B28F75F80001891BD /* EndScreen.swift in Sources */,
+				34D9DF2D28F761FE001891BD /* endScreenRow.swift in Sources */,
 				3407FCBA28F4FB23006B26D6 /* DislikeButton.swift in Sources */,
 				3407FCB828F4F929006B26D6 /* LikeDislikeButtons.swift in Sources */,
 				3407FCA728F4EAA7006B26D6 /* Topics.swift in Sources */,

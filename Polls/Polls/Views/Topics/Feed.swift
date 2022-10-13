@@ -11,27 +11,27 @@ struct Feed: View {
     @EnvironmentObject var modelData: ModelData
     var topic: Topic
     
-    var topicIndex: Int {
-        modelData.topics.firstIndex(where: { $0.id == topic.id })!
-    }
-    
-//    var theTopics: [Topic] {
-//        topic.isLiked = false
-//        topic.isDisliked
-//    }
-//
+    @State var topicIndex: Int = 0
+    var arrayLength = ModelData().topics.count - 1
     
     var body: some View {
         
-        // I want to loop through the topics, and only move to the next one when the like or dislike button is clicked
-        
-//        ForEach(topic) { topic in
-//
-//        }
-        
-        
-        TopicDetail(topic: ModelData().topics[0])
-        
+        VStack{
+            TopicDetail(topic: ModelData().topics[topicIndex])
+            if(topicIndex == arrayLength) {
+                NavigationLink{
+                    EndScreen()
+                } label: {
+                    Text("Finish")
+                }
+            }
+            else{
+                Button("Next") {
+                    topicIndex += 1
+                }
+            }
+
+        }
     }
 }
 

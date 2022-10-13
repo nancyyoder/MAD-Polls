@@ -7,34 +7,52 @@
 
 import SwiftUI
 
+enum Icon: String {
+    case like = "hand.thumbsup"
+    case dislike = "hand.thumbsdown"
+    
+    var filled: String {
+        "\(rawValue).fill"
+    }
+    
+}
+
 struct LikeDislikeButtons: View {
     
     @Binding var isLiked: Bool
-    @Binding var isDisLiked: Bool
+    @Binding var isDisliked: Bool
 
     var body: some View {
         HStack{
             Button {
                 isLiked.toggle()
+                setLikedState(liked: true, disliked: false)
             } label: {
-                Label("Like", systemImage: isLiked ? "hand.thumbsup.fill" : "hand.thumbsup")
+                Label("Like", systemImage: isLiked ? Icon.like.filled : Icon.like.rawValue)
                     .labelStyle(.iconOnly)
                     .foregroundColor(isLiked ? .blue : .gray)
             }
+            Spacer()
             Button {
-                isLiked.toggle()
+                isDisliked.toggle()
+                setLikedState(liked: false, disliked: true)
             } label: {
-                Label("Like", systemImage: isLiked ? "hand.thumbdown.fill" : "hand.thumbsdown")
+                Label("Dislike", systemImage: isDisliked ? Icon.dislike.filled : Icon.dislike.rawValue)
                     .labelStyle(.iconOnly)
-                    .foregroundColor(isLiked ? .blue : .gray)
+                    .foregroundColor(isDisliked ? .blue : .gray)
             }
             
-        }
+        }.padding([.leading, .trailing], 100)
+    }
+    func setLikedState(liked: Bool, disliked: Bool) {
+        isLiked = liked
+        isDisliked = disliked
+        
     }
 }
 
 struct LikeDislikeButtons_Previews: PreviewProvider {
     static var previews: some View {
-        LikeDislikeButtons(isLiked: .constant(false), isDisLiked: .constant(false))
+        LikeDislikeButtons(isLiked: .constant(false), isDisliked: .constant(false))
     }
 }

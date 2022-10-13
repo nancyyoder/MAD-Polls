@@ -9,30 +9,17 @@ import SwiftUI
 
 struct TopicsList: View {
     @EnvironmentObject var modelData: ModelData
-    @State private var showFavoritesOnly = false
-    
-    var filteredTopics: [Topic] {
-        modelData.topics.filter { topic in
-            (!showFavoritesOnly || topic.isFavorite)
-        }
-    }
-    
     
     var body: some View {
-        
-        
         NavigationView{
-            List {
-                Toggle(isOn: $showFavoritesOnly) {
-                    Text("Favorites only")
-                }
-                
-                ForEach(filteredTopics) { topic in
+            List{
+                ForEach(modelData.topics) { topic in
                     NavigationLink {
-                        TopicDetail(topic: topic)
-                    } label: {
+                        Feed(topic: topic)
+                    }label: {
                         TopicsRow(topic: topic)
                     }
+                    
                 }
             }
         }.navigationTitle("Topics")

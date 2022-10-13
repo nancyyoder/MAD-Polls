@@ -14,7 +14,7 @@ struct Topic: Hashable, Codable, Identifiable {
     var emoji: String
     var isFavorite: Bool
     var isLiked: Bool
-    isDisliked: Bool
+    var isDisliked: Bool
     
 //    private var imageName: String
 //    var image: Image {

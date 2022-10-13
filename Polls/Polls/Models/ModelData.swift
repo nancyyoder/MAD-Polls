@@ -35,3 +35,8 @@ func load<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
+
+//pseudo code for function
+// if like button is clicked -> isLiked = true, isDisliked = false in JSON
+// change the 
+

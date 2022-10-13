@@ -23,17 +23,10 @@ struct TopicDetail: View {
                 Text(topic.emoji).font(.title)
             }
             Spacer()
-            HStack{
-
-                LikeButton(isLiked:
-                            $modelData.topics[topicIndex].isLiked)
-                Spacer()
-                DislikeButton(isDisliked: $modelData.topics[topicIndex].isDisliked)
-                
-            }.padding([.leading, .trailing], 100)
+            LikeDislikeButtons(isLiked: $modelData.topics[topicIndex].isLiked, isDisliked: $modelData.topics[topicIndex].isDisliked)
 
         }
-        .padding([.bottom, .top], 220)
+        .padding([.bottom, .top], 180)
     }
 }
 
