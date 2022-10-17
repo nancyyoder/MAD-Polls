@@ -10,9 +10,16 @@ import Foundation
 
 final class ModelData: ObservableObject {
     @Published var topics: [Topic] = load("topics.json")
+    @Published var foods: [Food] = load("food.json")
+    @Published var animals: [Animal] = load("animals.json")
+    @Published var categories: [Category] = load("categories.json")
 }
 
 var topics: [Topic] = load("topics.json")
+var filteredTopics: [Topic] = []
+//var foods: [Food] = load("food.json")
+//var animals: [Animal] = load("animals.json")
+var categories: [Category] = load("categories.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data
@@ -35,8 +42,4 @@ func load<T: Decodable>(_ filename: String) -> T {
         fatalError("Couldn't parse \(filename) as \(T.self):\n\(error)")
     }
 }
-
-//pseudo code for function
-// if like button is clicked -> isLiked = true, isDisliked = false in JSON
-// change the 
 

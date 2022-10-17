@@ -9,18 +9,29 @@ import SwiftUI
 
 struct Feed: View {
     @EnvironmentObject var modelData: ModelData
+    var gory: String
     var topic: Topic
     
+    var filteredTopics: [Topic] {
+        ModelData().topics.filter { topic in
+            topic.category == gory
+        }
+    }
+    
     @State var topicIndex: Int = 0
-    var arrayLength = ModelData().topics.count - 1
+
     
     var body: some View {
         
         VStack{
-            TopicDetail(topic: ModelData().topics[topicIndex])
-            if(topicIndex == arrayLength) {
+            TopicDetail(topic: filteredTopics[topicIndex])
+            // the issue is that topic detial is being passed this new array rather than the model data array so the info (isLiked or isDisliked) is not updating in the ModelData and therefore endScreen is not showing the right data
+            
+//            TopicDetail(topic: ModelData().topics[0]).environmentObject(ModelData())
+            
+            if(topicIndex == (filteredTopics.count - 1)) {
                 NavigationLink{
-                    EndScreen()
+                    EndScreen(gory: gory)
                 } label: {
                     Text("Finish")
                 }
@@ -37,6 +48,6 @@ struct Feed: View {
 
 struct Feed_Previews: PreviewProvider {
     static var previews: some View {
-        Feed(topic: ModelData().topics[0]).environmentObject(ModelData())
+        Feed(gory: "Animals", topic: ModelData().topics[0]).environmentObject(ModelData())
     }
 }

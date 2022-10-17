@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "414C1E3C-342D-44C6-80F4-270CD3085518"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E762562-FAEF-4028-AEC9-D11F35DD7053"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Polls/Views/Topics/CategoryFeed.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "CategoryFeed"
+            landmarkType = "14">
+            <Locations>
+               <Location
+                  uuid = "2E762562-FAEF-4028-AEC9-D11F35DD7053 - e2eedf32f05f2d42"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Polls.CategoryFeed.modelData.getter : Polls.ModelData"
+                  moduleName = "Polls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nancyyoder/Desktop/Mobile%20App%20Dev/MAD-Polls/Polls/Polls/Views/Topics/CategoryFeed.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "87">
+               </Location>
+               <Location
+                  uuid = "2E762562-FAEF-4028-AEC9-D11F35DD7053 - cfe9de2eddbd5da8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Polls.CategoryFeed.$modelData.getter : SwiftUI.EnvironmentObject&lt;Polls.ModelData&gt;.Wrapper"
+                  moduleName = "Polls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nancyyoder/Desktop/Mobile%20App%20Dev/MAD-Polls/Polls/Polls/Views/Topics/CategoryFeed.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "87">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

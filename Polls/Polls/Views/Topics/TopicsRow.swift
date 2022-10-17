@@ -17,11 +17,6 @@ struct TopicsRow: View {
             Text(topic.name)
             
             Spacer()
-            
-            if topic.isFavorite {
-                Image(systemName: "star.fill")
-                    .foregroundColor(.yellow)
-            }
         }
     }
 }

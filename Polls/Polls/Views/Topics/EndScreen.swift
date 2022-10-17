@@ -9,10 +9,16 @@ import SwiftUI
 
 struct EndScreen: View {
     @EnvironmentObject var modelData: ModelData
-//    var topic: Topic
+    var gory: String
+    
+    var filteredTopics: [Topic] {
+        topics.filter { topic in
+            topic.category == gory
+        }
+    }
     
     var body: some View {
-        ForEach(modelData.topics) { topic in
+        ForEach(filteredTopics) { topic in
             endScreenRow(topic: topic)
         }
             
@@ -21,6 +27,6 @@ struct EndScreen: View {
 
 struct EndScreen_Previews: PreviewProvider {
     static var previews: some View {
-        EndScreen()
+        EndScreen(gory: "Animals")
     }
 }

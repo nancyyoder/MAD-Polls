@@ -18,12 +18,17 @@
 		3407FCA528F4EA7F006B26D6 /* TopicsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCA428F4EA7F006B26D6 /* TopicsRow.swift */; };
 		3407FCA728F4EAA7006B26D6 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCA628F4EAA6006B26D6 /* Topics.swift */; };
 		3407FCA928F4EAC8006B26D6 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCA828F4EAC8006B26D6 /* ModelData.swift */; };
-		3407FCAB28F4EBFB006B26D6 /* TopicsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCAA28F4EBFB006B26D6 /* TopicsList.swift */; };
 		3407FCAD28F4ECBB006B26D6 /* TopicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCAC28F4ECBB006B26D6 /* TopicDetail.swift */; };
-		3407FCB228F4F26E006B26D6 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCB128F4F26E006B26D6 /* LikeButton.swift */; };
 		3407FCB828F4F929006B26D6 /* LikeDislikeButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCB728F4F929006B26D6 /* LikeDislikeButtons.swift */; };
-		3407FCBA28F4FB23006B26D6 /* DislikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCB928F4FB23006B26D6 /* DislikeButton.swift */; };
 		3407FCBC28F4FE11006B26D6 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407FCBB28F4FE11006B26D6 /* Feed.swift */; };
+		342DE56028FDDD9E00E4BAAF /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = 342DE55F28FDDD9E00E4BAAF /* food.json */; };
+		342DE56228FDDE1500E4BAAF /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DE56128FDDE1500E4BAAF /* Foods.swift */; };
+		342DE56428FDDE4800E4BAAF /* Animals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DE56328FDDE4800E4BAAF /* Animals.swift */; };
+		342DE56628FDDE8700E4BAAF /* animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 342DE56528FDDE8700E4BAAF /* animals.json */; };
+		342DE56E28FDE03D00E4BAAF /* categories.json in Resources */ = {isa = PBXBuildFile; fileRef = 342DE56D28FDE03D00E4BAAF /* categories.json */; };
+		342DE57028FDE0D700E4BAAF /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DE56F28FDE0D700E4BAAF /* Categories.swift */; };
+		342DE57228FDE12B00E4BAAF /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DE57128FDE12B00E4BAAF /* CategoriesList.swift */; };
+		342DE57628FDE23000E4BAAF /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 342DE57528FDE23000E4BAAF /* CategoryRow.swift */; };
 		34D9DF2B28F75F80001891BD /* EndScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9DF2A28F75F80001891BD /* EndScreen.swift */; };
 		34D9DF2D28F761FE001891BD /* endScreenRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34D9DF2C28F761FE001891BD /* endScreenRow.swift */; };
 /* End PBXBuildFile section */
@@ -60,12 +65,17 @@
 		3407FCA428F4EA7F006B26D6 /* TopicsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsRow.swift; sourceTree = "<group>"; };
 		3407FCA628F4EAA6006B26D6 /* Topics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
 		3407FCA828F4EAC8006B26D6 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		3407FCAA28F4EBFB006B26D6 /* TopicsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsList.swift; sourceTree = "<group>"; };
 		3407FCAC28F4ECBB006B26D6 /* TopicDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetail.swift; sourceTree = "<group>"; };
-		3407FCB128F4F26E006B26D6 /* LikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		3407FCB728F4F929006B26D6 /* LikeDislikeButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeDislikeButtons.swift; sourceTree = "<group>"; };
-		3407FCB928F4FB23006B26D6 /* DislikeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DislikeButton.swift; sourceTree = "<group>"; };
 		3407FCBB28F4FE11006B26D6 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		342DE55F28FDDD9E00E4BAAF /* food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
+		342DE56128FDDE1500E4BAAF /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		342DE56328FDDE4800E4BAAF /* Animals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animals.swift; sourceTree = "<group>"; };
+		342DE56528FDDE8700E4BAAF /* animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animals.json; sourceTree = "<group>"; };
+		342DE56D28FDE03D00E4BAAF /* categories.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = categories.json; sourceTree = "<group>"; };
+		342DE56F28FDE0D700E4BAAF /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		342DE57128FDE12B00E4BAAF /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
+		342DE57528FDE23000E4BAAF /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
 		34D9DF2A28F75F80001891BD /* EndScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreen.swift; sourceTree = "<group>"; };
 		34D9DF2C28F761FE001891BD /* endScreenRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = endScreenRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				3407FCA628F4EAA6006B26D6 /* Topics.swift */,
+				342DE56F28FDE0D700E4BAAF /* Categories.swift */,
+				342DE56328FDDE4800E4BAAF /* Animals.swift */,
+				342DE56128FDDE1500E4BAAF /* Foods.swift */,
 				3407FCA828F4EAC8006B26D6 /* ModelData.swift */,
 			);
 			path = Models;
@@ -175,6 +188,9 @@
 			isa = PBXGroup;
 			children = (
 				3407FCA028F4E9D7006B26D6 /* topics.json */,
+				342DE56528FDDE8700E4BAAF /* animals.json */,
+				342DE55F28FDDD9E00E4BAAF /* food.json */,
+				342DE56D28FDE03D00E4BAAF /* categories.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -182,9 +198,7 @@
 		3407FCB328F4F317006B26D6 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				3407FCB128F4F26E006B26D6 /* LikeButton.swift */,
 				3407FCB728F4F929006B26D6 /* LikeDislikeButtons.swift */,
-				3407FCB928F4FB23006B26D6 /* DislikeButton.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -194,8 +208,9 @@
 			children = (
 				3407FCAC28F4ECBB006B26D6 /* TopicDetail.swift */,
 				3407FCA428F4EA7F006B26D6 /* TopicsRow.swift */,
+				342DE57528FDE23000E4BAAF /* CategoryRow.swift */,
 				3407FC7828F4E771006B26D6 /* ContentView.swift */,
-				3407FCAA28F4EBFB006B26D6 /* TopicsList.swift */,
+				342DE57128FDE12B00E4BAAF /* CategoriesList.swift */,
 				3407FCBB28F4FE11006B26D6 /* Feed.swift */,
 				34D9DF2A28F75F80001891BD /* EndScreen.swift */,
 				34D9DF2C28F761FE001891BD /* endScreenRow.swift */,
@@ -307,7 +322,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342DE56E28FDE03D00E4BAAF /* categories.json in Resources */,
+				342DE56628FDDE8700E4BAAF /* animals.json in Resources */,
 				3407FC7E28F4E773006B26D6 /* Preview Assets.xcassets in Resources */,
+				342DE56028FDDD9E00E4BAAF /* food.json in Resources */,
 				3407FCA128F4E9D7006B26D6 /* topics.json in Resources */,
 				3407FC7B28F4E773006B26D6 /* Assets.xcassets in Resources */,
 			);
@@ -334,19 +352,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342DE57228FDE12B00E4BAAF /* CategoriesList.swift in Sources */,
 				3407FCA528F4EA7F006B26D6 /* TopicsRow.swift in Sources */,
 				34D9DF2B28F75F80001891BD /* EndScreen.swift in Sources */,
 				34D9DF2D28F761FE001891BD /* endScreenRow.swift in Sources */,
-				3407FCBA28F4FB23006B26D6 /* DislikeButton.swift in Sources */,
+				342DE56228FDDE1500E4BAAF /* Foods.swift in Sources */,
+				342DE57028FDE0D700E4BAAF /* Categories.swift in Sources */,
 				3407FCB828F4F929006B26D6 /* LikeDislikeButtons.swift in Sources */,
 				3407FCA728F4EAA7006B26D6 /* Topics.swift in Sources */,
 				3407FCBC28F4FE11006B26D6 /* Feed.swift in Sources */,
 				3407FCAD28F4ECBB006B26D6 /* TopicDetail.swift in Sources */,
 				3407FCA928F4EAC8006B26D6 /* ModelData.swift in Sources */,
-				3407FCB228F4F26E006B26D6 /* LikeButton.swift in Sources */,
+				342DE56428FDDE4800E4BAAF /* Animals.swift in Sources */,
 				3407FC7928F4E771006B26D6 /* ContentView.swift in Sources */,
 				3407FC7728F4E771006B26D6 /* PollsApp.swift in Sources */,
-				3407FCAB28F4EBFB006B26D6 /* TopicsList.swift in Sources */,
+				342DE57628FDE23000E4BAAF /* CategoryRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

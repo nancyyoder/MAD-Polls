@@ -1,0 +1,14 @@
+[
+    {
+        "category": "Animals",
+        "id": 1001,
+        "emoji": "🐻"
+
+    },
+    {
+        "category": "Food",
+        "id": 1002,
+        "emoji": "🍔"
+
+    }
+]

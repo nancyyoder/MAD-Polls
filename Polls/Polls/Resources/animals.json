@@ -46,53 +46,5 @@
         "emoji": "🐠",
         "isLiked" : false,
         "isDisliked" : false
-    },
-    {
-        "name": "Salad",
-        "category": "Food",
-        "id": 1007,
-        "emoji": "🥗",
-        "isLiked" : false,
-        "isDisliked" : false
-    },
-    {
-        "name": "Fries",
-        "category": "Food",
-        "id": 1008,
-        "emoji": "🍟",
-        "isLiked" : false,
-        "isDisliked" : false
-    },
-    {
-        "name": "Pretzel",
-        "category": "Food",
-        "id": 1009,
-        "emoji": "🥨",
-        "isLiked" : false,
-        "isDisliked" : false
-    },
-    {
-        "name": "Cucumber",
-        "category": "Food",
-        "id": 1010,
-        "emoji": "🥒",
-        "isLiked" : false,
-        "isDisliked" : false
-    },
-    {
-        "name": "Waffle",
-        "category": "Food",
-        "id": 1011,
-        "emoji": "🧇",
-        "isLiked" : false,
-        "isDisliked" : false
-    },
-    {
-        "name": "Chicken",
-        "category": "Food",
-        "id": 1012,
-        "emoji": "🍗",
-        "isLiked" : false,
-        "isDisliked" : false
     }
 ]
