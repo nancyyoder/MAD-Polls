@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct PollsApp: App {
-    @StateObject private var modelData = ModelData()
+    @StateObject private var modelData = ModelData.shared
     
     var body: some Scene {
         WindowGroup {

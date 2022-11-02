@@ -15,7 +15,7 @@ struct CategoriesList: View {
             List{
                 ForEach(modelData.categories) { category in
                     NavigationLink {
-                        Feed(gory: category.category, topic: ModelData().topics[0]).environmentObject(ModelData())
+                        Feed(category: category.category, topic: ModelData.shared.topics[0]).environmentObject(ModelData.shared)
                     }label: {
                         CategoryRow(category: category)
                     }
@@ -29,6 +29,6 @@ struct CategoriesList: View {
 struct CategoriesList_Previews: PreviewProvider {
     static var previews: some View {
         CategoriesList()
-            .environmentObject(ModelData())
+            .environmentObject(ModelData.shared)
     }
 }

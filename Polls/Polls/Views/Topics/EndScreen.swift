@@ -18,12 +18,13 @@ struct EndScreen: View {
     }
     
     var body: some View {
+        Text("Results").font(.title)
         ForEach(filteredTopics) { topic in
             endScreenRow(topic: topic)
         }
             
-        }
     }
+}
 
 struct EndScreen_Previews: PreviewProvider {
     static var previews: some View {

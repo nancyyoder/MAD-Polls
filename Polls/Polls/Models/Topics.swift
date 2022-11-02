@@ -14,4 +14,12 @@ struct Topic: Hashable, Codable, Identifiable {
     var emoji: String
     var isLiked: Bool
     var isDisliked: Bool
+    
+    var index: Int {
+        switch category {
+        case "Animals": return 0
+        case "Food": return 6
+        default: return 0
+        }
+    }
 }

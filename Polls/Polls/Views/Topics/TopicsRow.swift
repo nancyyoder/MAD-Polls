@@ -22,7 +22,7 @@ struct TopicsRow: View {
 }
 
 struct TopicsRow_Previews: PreviewProvider {
-    static var topics = ModelData().topics
+    static var topics = ModelData.shared.topics
     
     static var previews: some View {
         Group{

@@ -11,6 +11,8 @@ struct TopicDetail: View {
     @EnvironmentObject var modelData: ModelData
     var topic: Topic
     
+    
+    
     var topicIndex: Int {
         modelData.topics.firstIndex(where: { $0.id == topic.id })!
     }
@@ -31,10 +33,10 @@ struct TopicDetail: View {
 }
 
 struct TopicDetail_Previews: PreviewProvider {
-    static let modelData = ModelData()
+    static let modelData = ModelData.shared
     
     static var previews: some View {
-        TopicDetail(topic: ModelData().topics[0])
+        TopicDetail(topic: ModelData.shared.topics[0])
             .environmentObject(modelData)
     }
 }

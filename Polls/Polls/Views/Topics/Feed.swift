@@ -9,45 +9,58 @@ import SwiftUI
 
 struct Feed: View {
     @EnvironmentObject var modelData: ModelData
-    var gory: String
+    var category: String
     var topic: Topic
     
     var filteredTopics: [Topic] {
-        ModelData().topics.filter { topic in
-            topic.category == gory
+        ModelData.shared.topics.filter { topic in
+            topic.category == category
         }
     }
     
-    @State var topicIndex: Int = 0
-
+    @State var topicIndex: Int
     
     var body: some View {
         
-        VStack{
-            TopicDetail(topic: filteredTopics[topicIndex])
+        //        if(gory == "Animals") {
+        //            topicIndex = 0;
+        //        }
+        //
+        //        else if(gory == "Food") {
+        //            topicIndex = 6;
+        //        }
+        //
+        //        else {
+        //            topicIndex = 0;
+        //        }
+        
+        VStack {
+            //            TopicDetail(topic: filteredTopics[topicIndex])
             // the issue is that topic detial is being passed this new array rather than the model data array so the info (isLiked or isDisliked) is not updating in the ModelData and therefore endScreen is not showing the right data
             
-//            TopicDetail(topic: ModelData().topics[0]).environmentObject(ModelData())
+            TopicDetail(topic: ModelData.shared.topics[topic.index]).environmentObject(ModelData.shared)
             
-            if(topicIndex == (filteredTopics.count - 1)) {
+            if (filteredTopics.last == topic) {
                 NavigationLink{
-                    EndScreen(gory: gory)
+                    EndScreen(gory: category)
                 } label: {
                     Text("Finish")
                 }
             }
             else{
                 Button("Next") {
-                    topicIndex += 1
+                    //topic.index += 1
                 }
             }
-
+            
         }
     }
 }
 
 struct Feed_Previews: PreviewProvider {
     static var previews: some View {
-        Feed(gory: "Animals", topic: ModelData().topics[0]).environmentObject(ModelData())
+        Feed(category: "Animals", topic: ModelData.shared.topics[0]).environmentObject(ModelData.shared)
     }
 }
+
+

@@ -9,10 +9,13 @@ import Foundation
 
 
 final class ModelData: ObservableObject {
+    static var shared = ModelData()
+    
     @Published var topics: [Topic] = load("topics.json")
     @Published var foods: [Food] = load("food.json")
     @Published var animals: [Animal] = load("animals.json")
     @Published var categories: [Category] = load("categories.json")
+    
 }
 
 var topics: [Topic] = load("topics.json")

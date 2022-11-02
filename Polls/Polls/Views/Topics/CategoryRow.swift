@@ -21,7 +21,7 @@ struct CategoryRow: View {
 }
 
 struct CategoryRow_Previews: PreviewProvider {
-    static var categories = ModelData().categories
+    static var categories = ModelData.shared.categories
     
     static var previews: some View {
         Group{
